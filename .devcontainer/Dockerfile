@@ -5,7 +5,7 @@ FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 # sudoとユーザー管理ツールを含む、基本パッケージをインストール
-RUN apt-get update && apt-get install -y sudo curl gnupg lsb-release locales build-essential python3-pip
+RUN apt-get update && apt-get install -y sudo curl gnupg lsb-release locales build-essential python3-pip git
 
 # 'vscode' という名前のユーザーを作成し、パスワードなしで管理者権限(sudo)を使えるようにする
 RUN useradd -m vscode -s /bin/bash && \
