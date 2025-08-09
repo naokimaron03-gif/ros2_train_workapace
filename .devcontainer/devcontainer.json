@@ -1,0 +1,18 @@
+{
+    "name": "ROS 2 Humble (Dockerfile Build)",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/desktop-lite:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-iot.ros"
+            ]
+        }
+    },
+    "remoteUser": "vscode"
+}
